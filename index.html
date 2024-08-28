@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+    </header>
+    
+    <main class="principal">
+        <img class="principal__logo" src="./Images/Logo.png" alt="Logo Alura Latam"/>
+
+        <article class="articulo__1">  
+            <textarea class="textArea__1" placeholder="Ingrese el texto aquí"></textarea>
+            <h6 class="orientacion__textArea">
+            <img src="./Images/exclamacion.png" alt="Signo de exclamación">
+                Solo letras minúsculas y sin tildes
+            </h6>
+            <div class="principal__div__button">
+                <button class="principal__button" onclick="botonEncriptar()", >Encriptar</button>
+                <button class="principal__button" onclick="botonDesencriptar()">Desencriptar</button>
+            </div> 
+        </article>
+
+        <article class="articulo__2">
+            <textarea class="textArea__2"></textarea>
+            <img class="imagen__muñeco" src="./Images/Muñeco.png" alt="Muñeco"> 
+            <h2 class="titulo__articulo__2">No hay mensaje</h2>
+            <p class="parrafo__articulo__2">Ingrese texto que desea encriptar o desencriptar</p> 
+            
+            <div class="principal__div__button">
+            <button class="copiar__button" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </article>  
+
+    </main>
+    <footer>
+        <p class="footer">Desafío encriptador - desencriptador</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
